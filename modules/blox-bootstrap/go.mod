@@ -1,4 +1,4 @@
-module github.com/nietongyu/hugo-blox-builder/modules/blox-bootstrap/v5
+module github.com/nietongyu/newblox/modules/blox-bootstrap/v5
 
 go 1.15
 
