@@ -31,7 +31,7 @@
   {{ $archive_page = site.GetPage "Section" $main_folder }}
 {{ end }}
 {{ if $block.content.filters.tag }}
-  {{ $archive_page = site.GetPage (printf "tag/%s" (urlize $block.content.filters.tag)) }}
+  {{ $archive_page = site.GetPage (printf "tags/%s" (urlize $block.content.filters.tag)) }}
   {{ $query = $archive_page.Pages }}
 {{ end }}
 {{ if $block.content.filters.category }}
