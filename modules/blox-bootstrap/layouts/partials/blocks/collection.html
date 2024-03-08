@@ -32,7 +32,7 @@
 {{ end }}
 {{ if $block.content.filters.tag }}
   {{ $archive_page = site.GetPage (printf "tag/%s" (urlize $block.content.filters.tag)) }}
-  {{ $query = $query | intersect $archive_page.Pages }}
+  {{ $query = $archive_page.Pages }}
 {{ end }}
 {{ if $block.content.filters.category }}
   {{ $archive_page = site.GetPage (printf "categories/%s" (urlize $block.content.filters.category)) }}
